@@ -1,6 +1,8 @@
+# Please Add OpenWeather API Key Before Run Project
+
 # markowate_weather
 
-A new Flutter project.
+A new Flutter project for Initial tasks.
 
 ## Getting Started
 
