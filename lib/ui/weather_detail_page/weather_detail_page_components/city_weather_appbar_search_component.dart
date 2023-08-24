@@ -37,7 +37,7 @@ class _MyAppbarWithSearchState extends State<MyAppbarWithSearch> {
       actions: [
         IconButton(
           onPressed: () {
-            fetchWeatherByCityNameFunction(cityName: searchController.text);
+            fetchWeatherByCityNameFunction(cityName: searchController.text.trim());
           },
           icon: const Icon(Icons.search_rounded),
         ),
