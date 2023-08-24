@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class WeatherSecondaryWidget extends StatelessWidget {
+class WeatherSecondaryComponent extends StatelessWidget {
 
   final String humidity;
   final String windSpeed;
@@ -109,7 +109,7 @@ class WeatherSecondaryWidget extends StatelessWidget {
     );
   }
 
-  const WeatherSecondaryWidget({
+  const WeatherSecondaryComponent({
     super.key,
     required this.humidity,
     required this.windSpeed,

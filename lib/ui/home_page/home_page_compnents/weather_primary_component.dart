@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../home_page_compnents/weather_desc_component.dart';
-import '../home_page_compnents/weather_temp_component.dart';
+import 'weather_desc_component.dart';
+import 'weather_temp_component.dart';
 
-class WeatherPrimaryCardWidget extends StatelessWidget {
+class WeatherPrimaryCardComponent extends StatelessWidget {
 
   final String temp;
   final String weatherDesc;
@@ -26,7 +26,7 @@ class WeatherPrimaryCardWidget extends StatelessWidget {
     );
   }
 
-  const WeatherPrimaryCardWidget({
+  const WeatherPrimaryCardComponent({
     super.key,
     required this.temp,
     required this.weatherDesc,
