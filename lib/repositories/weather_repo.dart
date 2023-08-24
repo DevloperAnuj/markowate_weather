@@ -1,13 +1,10 @@
-import 'dart:developer';
 
 import 'package:http/http.dart' as http;
 import 'package:markowate_weather/models/Weather/weather_response_model.dart';
 
 class WeatherRepository {
-  final String _apiKey = '------Your-----API------Key------';
-  final String _cityName = 'Karad';
-  final double _latitude = 52.3545828;
-  final double _longitude = 4.7638781;
+
+  final String _apiKey = '8107846c361d8e7c3fcebdb130e590d2';
 
   Future<WeatherModel> searchWeatherByCity({required String city}) async {
     try {

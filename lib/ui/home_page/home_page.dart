@@ -10,6 +10,7 @@ import 'home_page_compnents/weather_loading_component.dart';
 import 'home_page_widgets/weather_data_widget.dart';
 
 class MyHomePage extends StatelessWidget {
+
   const MyHomePage({super.key});
 
   @override
