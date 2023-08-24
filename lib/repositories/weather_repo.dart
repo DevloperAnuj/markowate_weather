@@ -11,7 +11,6 @@ class WeatherRepository {
       final http.Response response = await http.get(Uri.parse(
           "https://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&appid=$_apiKey"));
       if (response.statusCode == 200) {
-        print(response.body);
         final weatherData = weatherModelFromMap(response.body);
         return weatherData;
       } else {
@@ -28,7 +27,6 @@ class WeatherRepository {
       final http.Response response = await http.get(Uri.parse(
           "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&units=metric&appid=$_apiKey"));
       if (response.statusCode == 200) {
-        print(response.body);
         final weatherData = weatherModelFromMap(response.body);
         return weatherData;
       } else {
