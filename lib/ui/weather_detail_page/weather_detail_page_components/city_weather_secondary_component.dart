@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'weather_basic_info_component.dart';
+import 'city_basic_info_component.dart';
 
-class WeatherSecondaryComponent extends StatelessWidget {
-
+class CityWeatherSecondaryComponent extends StatelessWidget {
   final String humidity;
   final String windSpeed;
   final String cloudy;
@@ -18,17 +17,17 @@ class WeatherSecondaryComponent extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            WeatherBasicInfoComponent(
+            CityBasicInfoComponent(
               iconData: Icons.water_drop_rounded,
               value: "$humidity" "%",
               infoName: "Humidity",
             ),
-            WeatherBasicInfoComponent(
+            CityBasicInfoComponent(
               iconData: Icons.wind_power_outlined,
               value: "$windSpeed " "mtr/s",
               infoName: "Wind Speed",
             ),
-            WeatherBasicInfoComponent(
+            CityBasicInfoComponent(
               iconData: Icons.cloud_circle_rounded,
               value: "$cloudy" "%",
               infoName: "Cloudiness",
@@ -39,10 +38,14 @@ class WeatherSecondaryComponent extends StatelessWidget {
     );
   }
 
-  const WeatherSecondaryComponent({
+  const CityWeatherSecondaryComponent({
     super.key,
     required this.humidity,
     required this.windSpeed,
     required this.cloudy,
   });
 }
+
+
+
+

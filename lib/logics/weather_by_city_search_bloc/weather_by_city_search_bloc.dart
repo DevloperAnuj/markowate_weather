@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
@@ -21,7 +20,7 @@ class WeatherByCitySearchBloc
           .then((weatherData) =>
               emit(WeatherByCitySearchFetched(weatherModel: weatherData)))
           .catchError((error, stackTrace) {
-            print(stackTrace);
+        print(stackTrace);
         emit(WeatherByCitySearchError());
       });
     });

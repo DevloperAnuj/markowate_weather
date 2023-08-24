@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../home_page/home_page_compnents/weather_desc_component.dart';
 import '../../home_page/home_page_compnents/weather_temp_component.dart';
+import 'city_weather_desc_component.dart';
+import 'city_weather_temp_component.dart';
 
-class WeatherPrimaryCardComponent extends StatelessWidget {
+class CityWeatherPrimaryCardComponent extends StatelessWidget {
 
   final String temp;
   final String weatherDesc;
@@ -18,15 +20,15 @@ class WeatherPrimaryCardComponent extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            WeatherTempComponent(temp: temp),
-            WeatherDescComponent(weatherDesc: weatherDesc),
+            CityWeatherTempComponent(temp: temp),
+            CityWeatherDescComponent(weatherDesc: weatherDesc),
           ],
         ),
       ),
     );
   }
 
-  const WeatherPrimaryCardComponent({
+  const CityWeatherPrimaryCardComponent({
     super.key,
     required this.temp,
     required this.weatherDesc,

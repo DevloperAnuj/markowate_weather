@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../home_page_compnents/date_component.dart';
 import '../home_page_compnents/weather_placename_component.dart';
 import '../home_page_compnents/weather_primary_component.dart';
@@ -18,8 +17,9 @@ class WeatherDataWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: [
         WeatherPlaceNameComponent(
           cityName: cityName,
